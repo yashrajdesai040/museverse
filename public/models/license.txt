@@ -1,0 +1,11 @@
+Model Information:
+* title:	The Antikythera Mechanism
+* source:	https://sketchfab.com/3d-models/the-antikythera-mechanism-c7d4254f490b4dc8bbbbe05dda3b4adf
+* author:	Thomas Weibel (https://sketchfab.com/thomasweibel)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "The Antikythera Mechanism" (https://sketchfab.com/3d-models/the-antikythera-mechanism-c7d4254f490b4dc8bbbbe05dda3b4adf) by Thomas Weibel (https://sketchfab.com/thomasweibel) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

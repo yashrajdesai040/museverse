@@ -1,0 +1,304 @@
+{
+  "totalOriginalMB": "734.40",
+  "totalFinalMB": "83.49",
+  "totalSavedMB": "650.91",
+  "savingsPercent": "88.6%",
+  "results": [
+    {
+      "file": "stegosaurus.glb",
+      "origSize": 172326796,
+      "newSize": 5696296,
+      "saved": 166630500,
+      "reductionPct": "96.7%",
+      "status": "Compressed"
+    },
+    {
+      "file": "dimetrodon.glb",
+      "origSize": 144727764,
+      "newSize": 3360452,
+      "saved": 141367312,
+      "reductionPct": "97.7%",
+      "status": "Compressed"
+    },
+    {
+      "file": "otzi-iceman.glb",
+      "origSize": 59828416,
+      "newSize": 480,
+      "saved": 59827936,
+      "reductionPct": "100.0%",
+      "status": "Compressed"
+    },
+    {
+      "file": "archaeopteryx.glb",
+      "origSize": 43624488,
+      "newSize": 384992,
+      "saved": 43239496,
+      "reductionPct": "99.1%",
+      "status": "Compressed"
+    },
+    {
+      "file": "lucy-skull.glb",
+      "origSize": 39465828,
+      "newSize": 1866552,
+      "saved": 37599276,
+      "reductionPct": "95.3%",
+      "status": "Compressed"
+    },
+    {
+      "file": "anomalocaris.glb",
+      "origSize": 28849420,
+      "newSize": 7403096,
+      "saved": 21446324,
+      "reductionPct": "74.3%",
+      "status": "Compressed"
+    },
+    {
+      "file": "ammonite.glb",
+      "origSize": 28567336,
+      "newSize": 2198084,
+      "saved": 26369252,
+      "reductionPct": "92.3%",
+      "status": "Compressed"
+    },
+    {
+      "file": "trex-skull.glb",
+      "origSize": 26387636,
+      "newSize": 1769788,
+      "saved": 24617848,
+      "reductionPct": "93.3%",
+      "status": "Compressed"
+    },
+    {
+      "file": "jomon-vessel.glb",
+      "origSize": 23289324,
+      "newSize": 7768356,
+      "saved": 15520968,
+      "reductionPct": "66.6%",
+      "status": "Compressed"
+    },
+    {
+      "file": "rosetta-stone.glb",
+      "origSize": 22315448,
+      "newSize": 1057540,
+      "saved": 21257908,
+      "reductionPct": "95.3%",
+      "status": "Compressed"
+    },
+    {
+      "file": "dickinsonia-costata.glb",
+      "origSize": 16903396,
+      "newSize": 939996,
+      "saved": 15963400,
+      "reductionPct": "94.4%",
+      "status": "Compressed"
+    },
+    {
+      "file": "triceratops.glb",
+      "origSize": 16414288,
+      "newSize": 1426864,
+      "saved": 14987424,
+      "reductionPct": "91.3%",
+      "status": "Compressed"
+    },
+    {
+      "file": "saber-tooth-cat.glb",
+      "origSize": 13941820,
+      "newSize": 1967100,
+      "saved": 11974720,
+      "reductionPct": "85.9%",
+      "status": "Compressed"
+    },
+    {
+      "file": "stromatolite.glb",
+      "origSize": 12940840,
+      "newSize": 1182936,
+      "saved": 11757904,
+      "reductionPct": "90.9%",
+      "status": "Compressed"
+    },
+    {
+      "file": "opabinia.glb",
+      "origSize": 10187584,
+      "newSize": 10187584,
+      "saved": 0,
+      "reductionPct": "0.0%",
+      "status": "Kept original (already optimal)"
+    },
+    {
+      "file": "woolly-mammoth.glb",
+      "origSize": 9974196,
+      "newSize": 441272,
+      "saved": 9532924,
+      "reductionPct": "95.6%",
+      "status": "Compressed"
+    },
+    {
+      "file": "irish-elk.glb",
+      "origSize": 9672656,
+      "newSize": 2888648,
+      "saved": 6784008,
+      "reductionPct": "70.1%",
+      "status": "Compressed"
+    },
+    {
+      "file": "trilobite.glb",
+      "origSize": 9179272,
+      "newSize": 774924,
+      "saved": 8404348,
+      "reductionPct": "91.6%",
+      "status": "Compressed"
+    },
+    {
+      "file": "spinosaurus-skull.glb",
+      "origSize": 8429364,
+      "newSize": 6300604,
+      "saved": 2128760,
+      "reductionPct": "25.3%",
+      "status": "Compressed"
+    },
+    {
+      "file": "spriggina-floundersi.glb",
+      "origSize": 8375008,
+      "newSize": 451968,
+      "saved": 7923040,
+      "reductionPct": "94.6%",
+      "status": "Compressed"
+    },
+    {
+      "file": "zircon-crystal.glb",
+      "origSize": 7803332,
+      "newSize": 31124,
+      "saved": 7772208,
+      "reductionPct": "99.6%",
+      "status": "Compressed"
+    },
+    {
+      "file": "velociraptor.glb",
+      "origSize": 6311396,
+      "newSize": 6183084,
+      "saved": 128312,
+      "reductionPct": "2.0%",
+      "status": "Compressed"
+    },
+    {
+      "file": "acheulean-handaxe.glb",
+      "origSize": 5664732,
+      "newSize": 606096,
+      "saved": 5058636,
+      "reductionPct": "89.3%",
+      "status": "Compressed"
+    },
+    {
+      "file": "venus-willendorf.glb",
+      "origSize": 5561560,
+      "newSize": 488956,
+      "saved": 5072604,
+      "reductionPct": "91.2%",
+      "status": "Compressed"
+    },
+    {
+      "file": "lascaux-relief.glb",
+      "origSize": 5520028,
+      "newSize": 1093368,
+      "saved": 4426660,
+      "reductionPct": "80.2%",
+      "status": "Compressed"
+    },
+    {
+      "file": "tiktaalik.glb",
+      "origSize": 5075744,
+      "newSize": 5068760,
+      "saved": 6984,
+      "reductionPct": "0.1%",
+      "status": "Compressed"
+    },
+    {
+      "file": "nefertiti-bust.glb",
+      "origSize": 4387424,
+      "newSize": 4387424,
+      "saved": 0,
+      "reductionPct": "0.0%",
+      "status": "Kept original (already optimal)"
+    },
+    {
+      "file": "meganeura.glb",
+      "origSize": 4375088,
+      "newSize": 1824776,
+      "saved": 2550312,
+      "reductionPct": "58.3%",
+      "status": "Compressed"
+    },
+    {
+      "file": "terracotta-warrior.glb",
+      "origSize": 4228928,
+      "newSize": 1896456,
+      "saved": 2332472,
+      "reductionPct": "55.2%",
+      "status": "Compressed"
+    },
+    {
+      "file": "little_planet_earth.glb",
+      "origSize": 3541036,
+      "newSize": 1740912,
+      "saved": 1800124,
+      "reductionPct": "50.8%",
+      "status": "Compressed"
+    },
+    {
+      "file": "megalodon-tooth.glb",
+      "origSize": 3345984,
+      "newSize": 2911832,
+      "saved": 434152,
+      "reductionPct": "13.0%",
+      "status": "Compressed"
+    },
+    {
+      "file": "charnia-masoni.glb",
+      "origSize": 3214820,
+      "newSize": 1160200,
+      "saved": 2054620,
+      "reductionPct": "63.9%",
+      "status": "Compressed"
+    },
+    {
+      "file": "kpg-boundary-core.glb",
+      "origSize": 2634772,
+      "newSize": 320700,
+      "saved": 2314072,
+      "reductionPct": "87.8%",
+      "status": "Compressed"
+    },
+    {
+      "file": "cuneiform-tablet.glb",
+      "origSize": 1317260,
+      "newSize": 160088,
+      "saved": 1157172,
+      "reductionPct": "87.8%",
+      "status": "Compressed"
+    },
+    {
+      "file": "scene.glb",
+      "origSize": 1305648,
+      "newSize": 1305648,
+      "saved": 0,
+      "reductionPct": "0.0%",
+      "status": "Skipped (already compressed)"
+    },
+    {
+      "file": "intro-arch.glb",
+      "origSize": 221840,
+      "newSize": 156572,
+      "saved": 65268,
+      "reductionPct": "29.4%",
+      "status": "Compressed"
+    },
+    {
+      "file": "tree.glb",
+      "origSize": 165852,
+      "newSize": 146796,
+      "saved": 19056,
+      "reductionPct": "11.5%",
+      "status": "Compressed"
+    }
+  ]
+}

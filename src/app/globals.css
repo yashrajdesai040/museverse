@@ -1,0 +1,918 @@
+@import "tailwindcss";
+@import "@designcodeio/threeui/style.css";
+
+:root {
+  /* ─── Bauhaus / Neo-Brutalist Color Tokens (design.md v2) ─── */
+  --color-ink: #0E0E0E;
+  --color-paper: #F2EDE4;
+  --color-accent: #FFD400;
+  --color-ink-soft: #1C1C1C;
+  --color-line: var(--color-ink);
+
+  /* ─── 5 Geological Era Tints (3D scenes ONLY) ─── */
+  --era-01: #B3261E; /* Hadean-Archean: molten red */
+  --era-02: #1F6F8B; /* Proterozoic: deep ocean */
+  --era-03: #4C9A5B; /* Paleozoic: fern green */
+  --era-04: #E0701A; /* Mesozoic: amber */
+  --era-05: #4F86F7; /* Cenozoic: open sky */
+
+  /* ─── Motion Tokens ─── */
+  --ease-ui: cubic-bezier(0.7, 0, 0.2, 1);
+  --ease-cinematic: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-out-quint: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-spring: cubic-bezier(0.175, 0.885, 0.32, 1.15);
+  --dur-fast: 150ms;
+  --dur-base: 400ms;
+  --dur-slow: 900ms;
+  --dur-scene: 2000ms;
+
+  --background: var(--color-paper);
+  --foreground: var(--color-ink);
+
+  /* Semantic aliases */
+  --color-primary: var(--color-ink);
+  --color-background: var(--color-paper);
+  --font-headline: var(--font-space), 'Space Grotesk', system-ui, sans-serif;
+  --font-mono: var(--font-space-mono), monospace;
+}
+
+@theme inline {
+  --color-ink: var(--color-ink);
+  --color-paper: var(--color-paper);
+  --color-accent: var(--color-accent);
+  --color-ink-soft: var(--color-ink-soft);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-outfit: var(--font-outfit);
+  --font-space: var(--font-space);
+  --font-space-mono: var(--font-space-mono);
+}
+
+body {
+  background: var(--color-paper);
+  color: var(--color-ink);
+  font-family: var(--font-space), 'Space Grotesk', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection {
+  background-color: var(--color-accent);
+  color: var(--color-ink);
+}
+
+/* ─── Bauhaus / Neo-Brutalist Component Tokens ─── */
+.neo-box {
+  background: var(--color-paper);
+  color: var(--color-ink);
+  border: 3px solid var(--color-ink);
+  box-shadow: 6px 6px 0px var(--color-ink);
+  border-radius: 0 !important;
+}
+
+.neo-box-dark {
+  background: var(--color-ink);
+  color: var(--color-paper);
+  border: 3px solid var(--color-ink);
+  box-shadow: 6px 6px 0px var(--color-ink);
+  border-radius: 0 !important;
+}
+
+.neo-btn-primary {
+  background: var(--color-accent);
+  color: var(--color-ink);
+  border: 2px solid var(--color-ink);
+  box-shadow: 4px 4px 0px var(--color-ink);
+  border-radius: 0 !important;
+  font-weight: 700;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: transform 160ms var(--ease-out-expo), box-shadow 160ms var(--ease-out-expo), background-color 150ms ease;
+  will-change: transform;
+}
+
+.neo-btn-primary:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 6px 6px 0px var(--color-ink);
+}
+
+.neo-btn-primary:active {
+  transform: translate(2px, 2px);
+  box-shadow: 1px 1px 0px var(--color-ink);
+}
+
+.neo-btn-secondary {
+  background: var(--color-paper);
+  color: var(--color-ink);
+  border: 2px solid var(--color-ink);
+  box-shadow: 4px 4px 0px var(--color-ink);
+  border-radius: 0 !important;
+  font-weight: 700;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: transform 160ms var(--ease-out-expo), box-shadow 160ms var(--ease-out-expo), background-color 150ms ease;
+  will-change: transform;
+}
+
+.neo-btn-secondary:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 6px 6px 0px var(--color-ink);
+}
+
+.neo-btn-secondary:active {
+  transform: translate(2px, 2px);
+  box-shadow: 1px 1px 0px var(--color-ink);
+}
+
+/* ─── Tactile Feedback System (Physics-Based Springs & Deceleration) ─── */
+.tactile-lift {
+  transition: transform 180ms var(--ease-out-expo), box-shadow 180ms var(--ease-out-expo), border-color 180ms ease, background-color 150ms ease;
+  will-change: transform;
+}
+
+.tactile-lift:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 6px 6px 0px var(--color-ink);
+}
+
+.tactile-lift:active {
+  transform: translate(2px, 2px);
+  box-shadow: 1px 1px 0px var(--color-ink);
+}
+
+.tactile-press {
+  transition: transform 140ms var(--ease-out-expo), box-shadow 140ms var(--ease-out-expo);
+  will-change: transform;
+}
+
+.tactile-press:hover {
+  transform: scale(1.02);
+}
+
+.tactile-press:active {
+  transform: scale(0.97) translateY(1px);
+}
+
+.holographic-glint {
+  position: relative;
+  overflow: hidden;
+}
+
+.holographic-glint::after {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -60%;
+  width: 20%;
+  height: 200%;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.25) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  transform: rotate(25deg);
+  pointer-events: none;
+  transition: left 0.65s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.holographic-glint:hover::after {
+  left: 140%;
+}
+
+.neo-badge {
+  display: inline-flex;
+  align-items: center;
+  border: 2px solid var(--color-ink);
+  border-radius: 0 !important;
+  padding: 2px 8px;
+  font-family: var(--font-space-mono), monospace;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  background: var(--color-paper);
+  color: var(--color-ink);
+}
+
+.neo-badge-fossil {
+  background: var(--color-accent);
+  color: var(--color-ink);
+}
+
+.neo-badge-artifact {
+  background: var(--color-paper);
+  color: var(--color-ink);
+}
+
+/* ─── Brutalist Utility System ─── */
+.border-3 {
+  border-width: 3px !important;
+}
+.border-t-3 {
+  border-top-width: 3px !important;
+}
+.border-b-3 {
+  border-bottom-width: 3px !important;
+}
+.border-r-3 {
+  border-right-width: 3px !important;
+}
+.border-l-3 {
+  border-left-width: 3px !important;
+}
+
+.divide-x-3 > :not([hidden]) ~ :not([hidden]) {
+  border-left-width: 3px !important;
+}
+
+/* Brutalist Focus & Active States */
+*:focus-visible {
+  outline: none !important;
+  box-shadow: 0 0 0 3px #0055ff !important;
+  outline-offset: 3px !important;
+}
+
+/* ─── FunTech Experience: 4-Bar Audio Equalizer (.eq) ─── */
+.eq {
+  display: inline-flex;
+  align-items: flex-end;
+  gap: 2.5px;
+  height: 12px;
+  width: 14px;
+}
+.eq i {
+  display: block;
+  width: 2px;
+  height: 100%;
+  background: currentColor;
+  transform-origin: bottom;
+  border-radius: 0.5px;
+  transform: scaleY(0.25);
+  transition: transform 0.15s ease;
+}
+.eq.playing i:nth-child(1) {
+  animation: eq-bounce 0.65s ease-in-out infinite alternate;
+}
+.eq.playing i:nth-child(2) {
+  animation: eq-bounce 0.45s ease-in-out infinite 0.15s alternate;
+}
+.eq.playing i:nth-child(3) {
+  animation: eq-bounce 0.8s ease-in-out infinite 0.3s alternate;
+}
+.eq.playing i:nth-child(4) {
+  animation: eq-bounce 0.55s ease-in-out infinite 0.1s alternate;
+}
+
+@keyframes eq-bounce {
+  0% {
+    transform: scaleY(0.2);
+  }
+  50% {
+    transform: scaleY(0.85);
+  }
+  100% {
+    transform: scaleY(0.35);
+  }
+}
+
+/* React Bits Shimmer Animation */
+@keyframes shimmer {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+.animate-shimmer {
+  animation: shimmer 4s linear infinite;
+}
+
+/* Magic UI Marquee Animations */
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(calc(-100% - var(--gap, 1.5rem)));
+  }
+}
+
+@keyframes marquee-vertical {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(calc(-100% - var(--gap, 1.5rem)));
+  }
+}
+
+.animate-marquee {
+  animation: marquee var(--duration, 30s) linear infinite;
+}
+
+.animate-marquee-vertical {
+  animation: marquee-vertical var(--duration, 30s) linear infinite;
+}
+
+/* Magic UI Border Beam */
+@keyframes border-beam {
+  100% {
+    offset-distance: 100%;
+  }
+}
+
+.animate-border-beam {
+  animation: border-beam var(--duration, 12s) infinite linear;
+}
+
+/* ─── Cinematic CRT Scanline & Grain Texture ─── */
+.crt-overlay {
+  background: linear-gradient(
+    rgba(18, 16, 16, 0) 50%,
+    rgba(0, 0, 0, 0.25) 50%
+  ), linear-gradient(
+    90deg,
+    rgba(255, 0, 0, 0.03),
+    rgba(0, 255, 0, 0.01),
+    rgba(0, 0, 255, 0.03)
+  );
+  background-size: 100% 2px, 3px 100%;
+  pointer-events: none;
+}
+
+/* Custom Brutalist Range Input Slider (Square Thumb, 3px Track) */
+input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 8px;
+  background: #1a1a1a;
+  border: 2px solid #000;
+  outline: none;
+}
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  background: #ffcc00;
+  border: 3px solid #000;
+  border-radius: 0px;
+  cursor: pointer;
+  box-shadow: 2px 2px 0px #000;
+  transition: transform 0.1s ease;
+}
+input[type="range"]::-webkit-slider-thumb:hover {
+  transform: scale(1.15);
+}
+input[type="range"]::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  background: #ffcc00;
+  border: 3px solid #000;
+  border-radius: 0px;
+  cursor: pointer;
+  box-shadow: 2px 2px 0px #000;
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* ================= MINIMALIST INVERTED DIFFERENCE CURSOR ================= */
+html.has-custom-cursor,
+html.has-custom-cursor *,
+html.has-custom-cursor *::before,
+html.has-custom-cursor *::after {
+  cursor: none !important;
+}
+
+#csr-orb {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 9999px !important;
+  background-color: #ffffff;
+  mix-blend-mode: difference;
+  pointer-events: none;
+  z-index: 99999999;
+  opacity: 0;
+  will-change: transform, opacity;
+  transition: opacity 0.2s ease;
+}
+
+#csr-dot {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 4px;
+  height: 4px;
+  border-radius: 9999px !important;
+  background-color: #ffffff;
+  mix-blend-mode: difference;
+  pointer-events: none;
+  z-index: 99999999;
+  opacity: 0;
+  will-change: transform, opacity;
+  transition: opacity 0.2s ease;
+}
+
+/* Visibility Control */
+html.csr-visible #csr-orb,
+html.csr-visible #csr-dot {
+  opacity: 1;
+}
+
+html.csr-hidden #csr-orb,
+html.csr-hidden #csr-dot {
+  opacity: 0 !important;
+}
+
+body.csr-typing #csr-orb,
+body.csr-typing #csr-dot {
+  opacity: 0 !important;
+}
+
+@media (hover: none), (pointer: coarse) {
+  #csr-orb,
+  #csr-dot {
+    display: none !important;
+  }
+  html.has-custom-cursor,
+  html.has-custom-cursor *,
+  html.has-custom-cursor *::before,
+  html.has-custom-cursor *::after {
+    cursor: auto !important;
+  }
+}
+
+/* ══════════════════════════════════════════════
+   PHASE 2 — NEW SYSTEMS
+══════════════════════════════════════════════ */
+
+/* ── Terminal Cursor Blink ── */
+@keyframes terminal-blink {
+  0%, 49% { opacity: 1; }
+  50%, 100% { opacity: 0; }
+}
+.terminal-cursor {
+  display: inline-block;
+  width: 10px;
+  height: 1.2em;
+  background: #ffd700;
+  animation: terminal-blink 0.9s step-end infinite;
+  vertical-align: text-bottom;
+  margin-left: 2px;
+}
+
+/* ── Variable Font Weight (scroll velocity morphing) ── */
+:root {
+  --scroll-font-weight: 700;
+}
+.variable-heading {
+  font-variation-settings: 'wght' var(--scroll-font-weight);
+  transition: font-variation-settings 0.3s ease-out;
+}
+
+/* ── SVG Card Border Draw-In ── */
+.card-svg-border {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  overflow: visible;
+}
+.card-svg-border rect {
+  fill: none;
+  stroke: #000000;
+  stroke-width: 3;
+  stroke-dasharray: 9999;
+  stroke-dashoffset: 9999;
+}
+.card-svg-border.drawn rect {
+  stroke-dashoffset: 0;
+  transition: stroke-dashoffset 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* ── Scatter Plot Laser Lines ── */
+.scatter-axis-label {
+  font-family: monospace;
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #ffd700;
+  background: #000;
+  padding: 2px 6px;
+  border: 1px solid #ffd700;
+  white-space: nowrap;
+}
+
+/* ── Inspect Mode Badge ── */
+.inspect-mode-badge {
+  position: absolute;
+  bottom: 48px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #ffd700;
+  color: #000;
+  font-family: monospace;
+  font-size: 10px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  padding: 4px 12px;
+  border: 2px solid #000;
+  box-shadow: 3px 3px 0px #000;
+  opacity: 0;
+  pointer-events: none;
+  z-index: 50;
+  transition: opacity 0.2s ease;
+}
+.inspect-mode-badge.active { opacity: 1; }
+
+/* ── Coordinate Decoder Text ── */
+.coord-char {
+  display: inline-block;
+  font-variant-numeric: tabular-nums;
+  min-width: 0.6em;
+  text-align: center;
+}
+
+/* ── Degradation Slider Track Colors ── */
+input[type="range"].degradation-slider::-webkit-slider-runnable-track {
+  background: linear-gradient(to right, #b87333, #5c4a1e);
+}
+input[type="range"].degradation-slider::-webkit-slider-thumb {
+  background: #e8eaf0;
+  border-color: #b87333;
+}
+
+/* ══════════════════════════════════════════════
+   BRUTALIST COMPONENT CLASSES
+══════════════════════════════════════════════ */
+
+/* ── Card Brutalist ── */
+.card-brutalist {
+  border: 3px solid var(--color-primary, #1a1a1a);
+  background: var(--color-background, #f5f0e8);
+  padding: 1.5rem;
+  box-shadow: 6px 6px 0px var(--color-primary, #1a1a1a);
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+.card-brutalist:hover {
+  box-shadow: 8px 8px 0px var(--color-primary, #1a1a1a);
+}
+
+/* ── Button Brutalist ── */
+.btn-brutalist {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  font-family: var(--font-headline);
+  font-size: 0.75rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  border: 3px solid var(--color-primary, #1a1a1a);
+  background: var(--color-primary, #1a1a1a);
+  color: var(--color-background, #f5f0e8);
+  box-shadow: 4px 4px 0px var(--color-primary, #1a1a1a);
+  transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.2s ease, color 0.2s ease;
+  cursor: pointer;
+  text-decoration: none;
+}
+.btn-brutalist:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 6px 6px 0px var(--color-primary, #1a1a1a);
+  background: var(--color-yellow, #ffd700);
+  color: var(--color-primary, #1a1a1a);
+}
+
+/* On-dark variant (inverted) */
+.btn-brutalist--on-dark {
+  border-color: var(--color-background, #f5f0e8);
+  background: var(--color-background, #f5f0e8);
+  color: var(--color-primary, #1a1a1a);
+  box-shadow: 4px 4px 0px var(--color-background, #f5f0e8);
+}
+.btn-brutalist--on-dark:hover {
+  background: var(--color-yellow, #ffd700);
+  color: var(--color-primary, #1a1a1a);
+  border-color: var(--color-yellow, #ffd700);
+  box-shadow: 6px 6px 0px var(--color-yellow, #ffd700);
+}
+
+/* ── Hollow Stroke Text ── */
+.stroke-text {
+  -webkit-text-stroke: 2px rgba(255, 255, 255, 0.4);
+}
+
+/* ═══════════════════════════════════════════════════════
+   3D MODEL SPEEDER LOADER ANIMATION
+   From Uiverse.io by anand_4957
+   ═══════════════════════════════════════════════════════ */
+
+.speeder-stage {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  min-height: 200px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.loader {
+  position: absolute;
+  top: 50%;
+  margin-left: -50px;
+  left: 50%;
+  animation: speeder 0.4s linear infinite;
+}
+
+.loader > span {
+  height: 5px;
+  width: 35px;
+  background: var(--speeder-color, #000);
+  position: absolute;
+  top: -19px;
+  left: 60px;
+  border-radius: 2px 10px 1px 0;
+}
+
+.base span {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-top: 6px solid transparent;
+  border-right: 100px solid var(--speeder-color, #000);
+  border-bottom: 6px solid transparent;
+}
+
+.base span:before {
+  content: "";
+  height: 22px;
+  width: 22px;
+  border-radius: 50%;
+  background: var(--speeder-color, #000);
+  position: absolute;
+  right: -110px;
+  top: -16px;
+}
+
+.base span:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-top: 0 solid transparent;
+  border-right: 55px solid var(--speeder-color, #000);
+  border-bottom: 16px solid transparent;
+  top: -16px;
+  right: -98px;
+}
+
+.face {
+  position: absolute;
+  height: 12px;
+  width: 20px;
+  background: var(--speeder-color, #000);
+  border-radius: 20px 20px 0 0;
+  transform: rotate(-40deg);
+  right: -125px;
+  top: -15px;
+}
+
+.face:after {
+  content: "";
+  height: 12px;
+  width: 12px;
+  background: var(--speeder-color, #000);
+  right: 4px;
+  top: 7px;
+  position: absolute;
+  transform: rotate(40deg);
+  transform-origin: 50% 50%;
+  border-radius: 0 0 0 2px;
+}
+
+.loader > span > span:nth-child(1),
+.loader > span > span:nth-child(2),
+.loader > span > span:nth-child(3),
+.loader > span > span:nth-child(4) {
+  width: 30px;
+  height: 1px;
+  background: var(--speeder-color, #000);
+  position: absolute;
+  animation: fazer1 0.2s linear infinite;
+}
+
+.loader > span > span:nth-child(2) {
+  top: 3px;
+  animation: fazer2 0.4s linear infinite;
+}
+
+.loader > span > span:nth-child(3) {
+  top: 1px;
+  animation: fazer3 0.4s linear infinite;
+  animation-delay: -1s;
+}
+
+.loader > span > span:nth-child(4) {
+  top: 4px;
+  animation: fazer4 1s linear infinite;
+  animation-delay: -1s;
+}
+
+@keyframes fazer1 {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: -80px;
+    opacity: 0;
+  }
+}
+
+@keyframes fazer2 {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: -100px;
+    opacity: 0;
+  }
+}
+
+@keyframes fazer3 {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: -50px;
+    opacity: 0;
+  }
+}
+
+@keyframes fazer4 {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: -150px;
+    opacity: 0;
+  }
+}
+
+@keyframes speeder {
+  0% {
+    transform: translate(2px, 1px) rotate(0deg);
+  }
+  10% {
+    transform: translate(-1px, -3px) rotate(-1deg);
+  }
+  20% {
+    transform: translate(-2px, 0px) rotate(1deg);
+  }
+  30% {
+    transform: translate(1px, 2px) rotate(0deg);
+  }
+  40% {
+    transform: translate(1px, -1px) rotate(1deg);
+  }
+  50% {
+    transform: translate(-1px, 3px) rotate(-1deg);
+  }
+  60% {
+    transform: translate(-1px, 1px) rotate(0deg);
+  }
+  70% {
+    transform: translate(3px, 1px) rotate(-1deg);
+  }
+  80% {
+    transform: translate(-2px, -1px) rotate(1deg);
+  }
+  90% {
+    transform: translate(2px, 1px) rotate(0deg);
+  }
+  100% {
+    transform: translate(1px, -2px) rotate(-1deg);
+  }
+}
+
+.longfazers {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.longfazers span {
+  position: absolute;
+  height: 2px;
+  width: 20%;
+  background: var(--speeder-color, #000);
+}
+
+.longfazers span:nth-child(1) {
+  top: 20%;
+  animation: lf 0.6s linear infinite;
+  animation-delay: -5s;
+}
+
+.longfazers span:nth-child(2) {
+  top: 40%;
+  animation: lf2 0.8s linear infinite;
+  animation-delay: -1s;
+}
+
+.longfazers span:nth-child(3) {
+  top: 60%;
+  animation: lf3 0.6s linear infinite;
+}
+
+.longfazers span:nth-child(4) {
+  top: 80%;
+  animation: lf4 0.5s linear infinite;
+  animation-delay: -3s;
+}
+
+@keyframes lf {
+  0% {
+    left: 200%;
+  }
+  100% {
+    left: -200%;
+    opacity: 0;
+  }
+}
+
+@keyframes lf2 {
+  0% {
+    left: 200%;
+  }
+  100% {
+    left: -200%;
+    opacity: 0;
+  }
+}
+
+@keyframes lf3 {
+  0% {
+    left: 200%;
+  }
+  100% {
+    left: -100%;
+    opacity: 0;
+  }
+}
+
+/* ─── Navigation Utilities & Drawer Transitions ─── */
+@keyframes slideDownDrawer {
+  0% {
+    opacity: 0;
+    transform: translateY(-16px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInOverlay {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.animate-slide-down {
+  animation: slideDownDrawer 0.22s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.animate-fade-in {
+  animation: fadeInOverlay 0.2s ease-out forwards;
+}
+
+@keyframes lf4 {
+  0% {
+    left: 200%;
+  }
+  100% {
+    left: -100%;
+    opacity: 0;
+  }
+}
+
+

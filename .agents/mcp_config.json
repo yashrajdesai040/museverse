@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "graphify": {
+      "url": "https://api.graphify.net/mcp",
+      "httpUrl": "https://api.graphify.net/mcp",
+      "serverUrl": "https://api.graphify.net/mcp",
+      "headers": {
+        "Authorization": "Bearer <GRAPHIFY_API_KEY>"
+      }
+    }
+  }
+}

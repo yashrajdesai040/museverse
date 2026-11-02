@@ -1,0 +1,724 @@
+{
+  "project": "MUSEO — Museum of Deep Time & Earth Evolution",
+  "exportedAt": "2026-10-22T14:47:43.774Z",
+  "shaderMode": "pbr",
+  "totalScreenshots": 76,
+  "categories": {
+    "pages": {
+      "label": "01. Full Pages",
+      "folder": "01-pages",
+      "description": "Every route and full-page viewport in the application"
+    },
+    "sections": {
+      "label": "02. Home Sections",
+      "folder": "02-home-sections",
+      "description": "All 8 architectural sections composing the Home experience"
+    },
+    "models": {
+      "label": "03. 3D Models (20)",
+      "folder": "03-3d-models",
+      "description": "Every 3D procedural & GLB fossil and cultural artifact specimen"
+    },
+    "scenes": {
+      "label": "04. 3D Scenes & Stages",
+      "folder": "04-3d-scenes",
+      "description": "All 5 planetary evolution globes and 6 specialized 3D scene rigs"
+    },
+    "components": {
+      "label": "05. UI & ReactBits",
+      "folder": "05-components",
+      "description": "All reusable UI components, layout shells, and ReactBits primitives"
+    },
+    "modals": {
+      "label": "06. Interactive Modals",
+      "folder": "06-modals",
+      "description": "Command Palette, Field Notebook tabs, and Live UI Reticle overlays"
+    }
+  },
+  "files": [
+    {
+      "id": "page-01-home",
+      "category": "pages",
+      "archivePath": "01-pages/page-01-home.png",
+      "title": "Home Page (Museum of Deep Time)",
+      "subtitle": "Complete 8-section institutional landing page with 3D hero & timeline",
+      "sourceFile": "src/pages/Home/HomePage.tsx",
+      "dimensions": "1440×900"
+    },
+    {
+      "id": "page-02-login",
+      "category": "pages",
+      "archivePath": "01-pages/page-02-login-ticket-desk.png",
+      "title": "Admission & 3D Physics Ticket Desk",
+      "subtitle": "Interactive Bauhaus Robot Docent kiosk, pass stamping & stub tear",
+      "sourceFile": "src/pages/Login.tsx",
+      "dimensions": "1440×900"
+    },
+    {
+      "id": "page-03-earth-evolution",
+      "category": "pages",
+      "archivePath": "01-pages/page-03-earth-evolution-globe.png",
+      "title": "Earth Evolution 3D Planetary Observatory",
+      "subtitle": "4,600 Ma scrubbable tectonic globe, orbital satellites & Chicxulub cutscene",
+      "sourceFile": "src/pages/EarthEvolution.tsx",
+      "dimensions": "1440×900"
+    },
+    {
+      "id": "page-04-gallery",
+      "category": "pages",
+      "archivePath": "01-pages/page-04-specimen-gallery.png",
+      "title": "20-Specimen Paleontological & Cultural Gallery",
+      "subtitle": "Filterable curatorial catalog of verified fossils and hominin artifacts",
+      "sourceFile": "src/pages/Gallery.tsx",
+      "dimensions": "1440×900"
+    },
+    {
+      "id": "page-05-entity-detail",
+      "category": "pages",
+      "archivePath": "01-pages/page-05-specimen-detail-3d-lab.png",
+      "title": "3D Specimen Deep-Dive & Exploded View Lab",
+      "subtitle": "Studio PBR, GLSL X-Ray, Wireframe, Exploded kinematics & accession dossier",
+      "sourceFile": "src/pages/EntityDetail.tsx",
+      "dimensions": "1440×900"
+    },
+    {
+      "id": "page-06-motion-lab",
+      "category": "pages",
+      "archivePath": "01-pages/page-06-motion-lab.png",
+      "title": "9-System Interactive Motion & Shader Lab",
+      "subtitle": "Live showcase of Liquid Metal, Thinking Orb, CanvasUI, BorderBeam & OriginKit",
+      "sourceFile": "src/pages/MotionLab.tsx",
+      "dimensions": "1440×900"
+    },
+    {
+      "id": "page-07-not-found",
+      "category": "pages",
+      "archivePath": "01-pages/page-07-not-found-404.png",
+      "title": "404 Stratigraphic Unconformity Page",
+      "subtitle": "Missing geological horizon diagnostic & recovery navigation",
+      "sourceFile": "src/pages/NotFound.tsx",
+      "dimensions": "1440×900"
+    },
+    {
+      "id": "section-01-hero",
+      "category": "sections",
+      "archivePath": "02-home-sections/section-01-hero.png",
+      "title": "01. Hero Section & Interactive 3D Preview",
+      "subtitle": "Split Neo-Brutalist marquee with live 3D rotating specimen & KPI strip",
+      "sourceFile": "src/pages/Home/sections/HeroSection.tsx",
+      "dimensions": "1440×820"
+    },
+    {
+      "id": "section-02-deep-time-scale",
+      "category": "sections",
+      "archivePath": "02-home-sections/section-02-deep-time-scale.png",
+      "title": "02. Deep Time Proportional Ruler Section",
+      "subtitle": "4.6-billion-year logarithmic vs linear geological proportion visualizer",
+      "sourceFile": "src/pages/Home/sections/DeepTimeScaleSection.tsx",
+      "dimensions": "1440×760"
+    },
+    {
+      "id": "section-03-evolution-stages",
+      "category": "sections",
+      "archivePath": "02-home-sections/section-03-evolution-stages.png",
+      "title": "03. Five Planetary Evolution Stages Section",
+      "subtitle": "Hadean–Archean to Cenozoic atmospheric O₂, temperature & tectonic cards",
+      "sourceFile": "src/pages/Home/sections/EvolutionStagesSection.tsx",
+      "dimensions": "1440×820"
+    },
+    {
+      "id": "section-04-featured-specimens",
+      "category": "sections",
+      "archivePath": "02-home-sections/section-04-featured-specimens.png",
+      "title": "04. Featured Specimens Curatorial Grid",
+      "subtitle": "Highlighted fossils & hominin artifacts with BorderBeam & SpotlightCard",
+      "sourceFile": "src/pages/Home/sections/FeaturedSpecimensSection.tsx",
+      "dimensions": "1440×860"
+    },
+    {
+      "id": "section-05-stratigraphic-comparator",
+      "category": "sections",
+      "archivePath": "02-home-sections/section-05-stratigraphic-comparator.png",
+      "title": "05. Side-by-Side 3D Stratigraphic Comparator",
+      "subtitle": "Dual synchronized 3D specimen turntables, Δ Ma telemetry & OriginFlipCard",
+      "sourceFile": "src/pages/Home/sections/StratigraphicComparatorSection.tsx",
+      "dimensions": "1440×880"
+    },
+    {
+      "id": "section-06-extinction-turning-points",
+      "category": "sections",
+      "archivePath": "02-home-sections/section-06-extinction-turning-points.png",
+      "title": "06. Big Five Mass Extinction Turning Points",
+      "subtitle": "Ordovician, Devonian, Permian Great Dying, Triassic & K-Pg Chicxulub matrix",
+      "sourceFile": "src/pages/Home/sections/ExtinctionTurningPointsSection.tsx",
+      "dimensions": "1440×820"
+    },
+    {
+      "id": "section-07-provenance-verification",
+      "category": "sections",
+      "archivePath": "02-home-sections/section-07-provenance-verification.png",
+      "title": "07. Institutional Provenance & CC0 Verification",
+      "subtitle": "Smithsonian, NHM London, Louvre & Paleobiology Database citation ledger",
+      "sourceFile": "src/pages/Home/sections/ProvenanceVerificationSection.tsx",
+      "dimensions": "1440×760"
+    },
+    {
+      "id": "section-08-admission-portal",
+      "category": "sections",
+      "archivePath": "02-home-sections/section-08-admission-portal.png",
+      "title": "08. Admission Portal & Souvenir Ticket Section",
+      "subtitle": "Act IV call-to-action with live Ticket Desk & Field Notebook triggers",
+      "sourceFile": "src/pages/Home/sections/AdmissionPortalSection.tsx",
+      "dimensions": "1440×720"
+    },
+    {
+      "id": "model-01-jack-hills-zircon",
+      "category": "models",
+      "archivePath": "03-3d-models/model-01-zircon-crystal.png",
+      "title": "ACC-F-001 · Jack Hills Detrital Zircon (W74-2/36)",
+      "subtitle": "3D Model Preset: zircon-crystal (4,404 Ma)",
+      "sourceFile": "src/lib/proceduralModels.ts (zircon-crystal)",
+      "dimensions": "1200×900 WebGL"
+    },
+    {
+      "id": "model-02-dresser-stromatolite",
+      "category": "models",
+      "archivePath": "03-3d-models/model-02-stromatolite-dome.png",
+      "title": "ACC-F-002 · Pilbara Conical Stromatolite",
+      "subtitle": "3D Model Preset: stromatolite-dome (3,480 Ma)",
+      "sourceFile": "src/lib/proceduralModels.ts (stromatolite-dome)",
+      "dimensions": "1200×900 WebGL"
+    },
+    {
+      "id": "model-03-grypania-spiralis",
+      "category": "models",
+      "archivePath": "03-3d-models/model-03-grypania-coil.png",
+      "title": "ACC-F-003 · Grypania spiralis",
+      "subtitle": "3D Model Preset: grypania-coil (1,870 Ma)",
+      "sourceFile": "src/lib/proceduralModels.ts (grypania-coil)",
+      "dimensions": "1200×900 WebGL"
+    },
+    {
+      "id": "model-04-dickinsonia-costata",
+      "category": "models",
+      "archivePath": "03-3d-models/model-04-dickinsonia-ribbed.png",
+      "title": "ACC-F-004 · Dickinsonia costata",
+      "subtitle": "3D Model Preset: dickinsonia-ribbed (558 Ma)",
+      "sourceFile": "src/lib/proceduralModels.ts (dickinsonia-ribbed)",
+      "dimensions": "1200×900 WebGL"
+    },
+    {
+      "id": "model-05-charnia-masoni",
+      "category": "models",
+      "archivePath": "03-3d-models/model-05-charnia-frond.png",
+      "title": "ACC-F-005 · Charnia masoni",
+      "subtitle": "3D Model Preset: charnia-frond (565 Ma)",
+      "sourceFile": "src/lib/proceduralModels.ts (charnia-frond)",
+      "dimensions": "1200×900 WebGL"
+    },
+    {
+      "id": "model-06-anomalocaris-canadensis",
+      "category": "models",
+      "archivePath": "03-3d-models/model-06-anomalocaris-predator.png",
+      "title": "ACC-F-006 · Anomalocaris canadensis",
+      "subtitle": "3D Model Preset: anomalocaris-predator (508 Ma)",
+      "sourceFile": "src/lib/proceduralModels.ts (anomalocaris-predator)",
+      "dimensions": "1200×900 WebGL"
+    },
+    {
+      "id": "model-07-paradoxides-davidis",
+      "category": "models",
+      "archivePath": "03-3d-models/model-07-trilobite-paradoxides.png",
+      "title": "ACC-F-007 · Paradoxides davidis",
+      "subtitle": "3D Model Preset: trilobite-paradoxides (505 Ma)",
+      "sourceFile": "src/lib/proceduralModels.ts (trilobite-paradoxides)",
+      "dimensions": "1200×900 WebGL"
+    },
+    {
+      "id": "model-08-dunkleosteus-terrelli",
+      "category": "models",
+      "archivePath": "03-3d-models/model-08-dunkleosteus-jaw.png",
+      "title": "ACC-F-008 · Dunkleosteus terrelli Cranial Armor",
+      "subtitle": "3D Model Preset: dunkleosteus-jaw (358 Ma)",
+      "sourceFile": "src/lib/proceduralModels.ts (dunkleosteus-jaw)",
+      "dimensions": "1200×900 WebGL"
+    },
+    {
+      "id": "model-09-tiktaalik-roseae",
+      "category": "models",
+      "archivePath": "03-3d-models/model-09-tiktaalik-limb.png",
+      "title": "ACC-F-009 · Tiktaalik roseae (NUFV 108)",
+      "subtitle": "3D Model Preset: tiktaalik-limb (375 Ma)",
+      "sourceFile": "src/lib/proceduralModels.ts (tiktaalik-limb)",
+      "dimensions": "1200×900 WebGL"
+    },
+    {
+      "id": "model-10-placenticeras-meeki",
+      "category": "models",
+      "archivePath": "03-3d-models/model-10-ammonite-spiral.png",
+      "title": "ACC-F-010 · Placenticeras meeki (Ammolite Suture Shell)",
+      "subtitle": "3D Model Preset: ammonite-spiral (75.0 Ma)",
+      "sourceFile": "src/lib/proceduralModels.ts (ammonite-spiral)",
+      "dimensions": "1200×900 WebGL"
+    },
+    {
+      "id": "model-11-archaeopteryx-lithographica",
+      "category": "models",
+      "archivePath": "03-3d-models/model-11-archaeopteryx-slab.png",
+      "title": "ACC-F-011 · Archaeopteryx lithographica (Berlin Specimen)",
+      "subtitle": "3D Model Preset: archaeopteryx-slab (150.0 Ma)",
+      "sourceFile": "src/lib/proceduralModels.ts (archaeopteryx-slab)",
+      "dimensions": "1200×900 WebGL"
+    },
+    {
+      "id": "model-12-tyrannosaurus-rex-skull",
+      "category": "models",
+      "archivePath": "03-3d-models/model-12-trex-skull.png",
+      "title": "ACC-F-012 · Tyrannosaurus rex Cranium (USNM 555000)",
+      "subtitle": "3D Model Preset: trex-skull (66.8 Ma)",
+      "sourceFile": "src/lib/proceduralModels.ts (trex-skull)",
+      "dimensions": "1200×900 WebGL"
+    },
+    {
+      "id": "model-13-australopithecus-afarensis-lucy",
+      "category": "models",
+      "archivePath": "03-3d-models/model-13-lucy-hominid.png",
+      "title": "ACC-F-013 · Australopithecus afarensis (\"Lucy\" AL 288-1)",
+      "subtitle": "3D Model Preset: lucy-hominid (3.20 Ma)",
+      "sourceFile": "src/lib/proceduralModels.ts (lucy-hominid)",
+      "dimensions": "1200×900 WebGL"
+    },
+    {
+      "id": "model-14-mammuthus-primigenius-molar",
+      "category": "models",
+      "archivePath": "03-3d-models/model-14-mammoth-molar.png",
+      "title": "ACC-F-014 · Mammuthus primigenius Lamellar Molar",
+      "subtitle": "3D Model Preset: mammoth-molar (0.04 Ma (40,000 BP))",
+      "sourceFile": "src/lib/proceduralModels.ts (mammoth-molar)",
+      "dimensions": "1200×900 WebGL"
+    },
+    {
+      "id": "model-15-lomekwi-stone-core",
+      "category": "models",
+      "archivePath": "03-3d-models/model-15-lomekwi-core.png",
+      "title": "ACC-A-001 · Lomekwi 3 Basalt Anvil Core (LOM3-2011)",
+      "subtitle": "3D Model Preset: lomekwi-core (3.30 Ma)",
+      "sourceFile": "src/lib/proceduralModels.ts (lomekwi-core)",
+      "dimensions": "1200×900 WebGL"
+    },
+    {
+      "id": "model-16-acheulean-biface-handaxe",
+      "category": "models",
+      "archivePath": "03-3d-models/model-16-acheulean-handaxe.png",
+      "title": "ACC-A-002 · Olduvai Gorge Acheulean Biface Handaxe",
+      "subtitle": "3D Model Preset: acheulean-handaxe (1.40 Ma)",
+      "sourceFile": "src/lib/proceduralModels.ts (acheulean-handaxe)",
+      "dimensions": "1200×900 WebGL"
+    },
+    {
+      "id": "model-17-blombos-engraved-ochre",
+      "category": "models",
+      "archivePath": "03-3d-models/model-17-blombos-ochre.png",
+      "title": "ACC-A-003 · Blombos Cave Engraved Ochre Plaque (SAM-AA 8938)",
+      "subtitle": "3D Model Preset: blombos-ochre (0.075 Ma (75,000 BP))",
+      "sourceFile": "src/lib/proceduralModels.ts (blombos-ochre)",
+      "dimensions": "1200×900 WebGL"
+    },
+    {
+      "id": "model-18-willendorf-paleolithic-figurine",
+      "category": "models",
+      "archivePath": "03-3d-models/model-18-venus-figurine.png",
+      "title": "ACC-A-004 · Gravettian Oolitic Limestone Figurine",
+      "subtitle": "3D Model Preset: venus-figurine (0.030 Ma (29,500 BP))",
+      "sourceFile": "src/lib/proceduralModels.ts (venus-figurine)",
+      "dimensions": "1200×900 WebGL"
+    },
+    {
+      "id": "model-19-jomon-flame-rimmed-vessel",
+      "category": "models",
+      "archivePath": "03-3d-models/model-19-jomon-vessel.png",
+      "title": "ACC-A-005 · Jōmon Cord-Marked Ceramic Vessel (Kaen-Doki)",
+      "subtitle": "3D Model Preset: jomon-vessel (0.012 Ma (c. 10,000–3,000 BCE))",
+      "sourceFile": "src/lib/proceduralModels.ts (jomon-vessel)",
+      "dimensions": "1200×900 WebGL"
+    },
+    {
+      "id": "model-20-uruk-proto-cuneiform-tablet",
+      "category": "models",
+      "archivePath": "03-3d-models/model-20-cuneiform-tablet.png",
+      "title": "ACC-A-006 · Uruk IV Administrative Cuneiform Tablet",
+      "subtitle": "3D Model Preset: cuneiform-tablet (0.005 Ma (c. 3100 BCE))",
+      "sourceFile": "src/lib/proceduralModels.ts (cuneiform-tablet)",
+      "dimensions": "1200×900 WebGL"
+    },
+    {
+      "id": "scene-globe-hadean-archean",
+      "category": "scenes",
+      "archivePath": "04-3d-scenes/scene-globe-01-hadean-archean.png",
+      "title": "3D Earth Globe · Stage 01: Hadean–Archean",
+      "subtitle": "4,600 – 2,500 Ma · Primordial Vaalbara & Ur Proto-Cratons · O₂ 0.001%",
+      "sourceFile": "src/scenes/earth/Globe.tsx + ContinentalDrift.tsx",
+      "dimensions": "1200×900 WebGL"
+    },
+    {
+      "id": "scene-globe-proterozoic",
+      "category": "scenes",
+      "archivePath": "04-3d-scenes/scene-globe-02-proterozoic.png",
+      "title": "3D Earth Globe · Stage 02: Proterozoic",
+      "subtitle": "2,500 – 541 Ma · Columbia & Rodinia Supercontinents · O₂ 2.5%",
+      "sourceFile": "src/scenes/earth/Globe.tsx + ContinentalDrift.tsx",
+      "dimensions": "1200×900 WebGL"
+    },
+    {
+      "id": "scene-globe-paleozoic",
+      "category": "scenes",
+      "archivePath": "04-3d-scenes/scene-globe-03-paleozoic.png",
+      "title": "3D Earth Globe · Stage 03: Paleozoic",
+      "subtitle": "541 – 252 Ma · Gondwana & Laurussia Colliding into Pangaea · O₂ 26%",
+      "sourceFile": "src/scenes/earth/Globe.tsx + ContinentalDrift.tsx",
+      "dimensions": "1200×900 WebGL"
+    },
+    {
+      "id": "scene-globe-mesozoic",
+      "category": "scenes",
+      "archivePath": "04-3d-scenes/scene-globe-04-mesozoic.png",
+      "title": "3D Earth Globe · Stage 04: Mesozoic",
+      "subtitle": "252 – 66 Ma · Rifting Pangaea (Laurasia & Gondwana Separation) · O₂ 21.5%",
+      "sourceFile": "src/scenes/earth/Globe.tsx + ContinentalDrift.tsx",
+      "dimensions": "1200×900 WebGL"
+    },
+    {
+      "id": "scene-globe-cenozoic",
+      "category": "scenes",
+      "archivePath": "04-3d-scenes/scene-globe-05-cenozoic.png",
+      "title": "3D Earth Globe · Stage 05: Cenozoic",
+      "subtitle": "66 – 0 Ma · Modern Seven-Continent Configuration · O₂ 20.95%",
+      "sourceFile": "src/scenes/earth/Globe.tsx + ContinentalDrift.tsx",
+      "dimensions": "1200×900 WebGL"
+    },
+    {
+      "id": "scene-orbital-stage-models",
+      "category": "scenes",
+      "archivePath": "04-3d-scenes/scene-06-orbital-specimen-satellites.png",
+      "title": "3D Orbital Specimen Satellites Rig",
+      "subtitle": "Proximity-culled 3D specimen satellites orbiting the Earth globe",
+      "sourceFile": "src/scenes/earth/StageModels.tsx",
+      "dimensions": "1200×900 WebGL"
+    },
+    {
+      "id": "scene-extinction-markers",
+      "category": "scenes",
+      "archivePath": "04-3d-scenes/scene-07-extinction-markers-chicxulub.png",
+      "title": "3D Extinction Markers & Chicxulub Beacon",
+      "subtitle": "Yucatán 21.4°N, 89.5°W impact target ring & spike on 66 Ma globe",
+      "sourceFile": "src/scenes/earth/ExtinctionMarkers.tsx",
+      "dimensions": "1200×900 WebGL"
+    },
+    {
+      "id": "scene-asteroid-cutscene",
+      "category": "scenes",
+      "archivePath": "04-3d-scenes/scene-08-asteroid-impact-cutscene.png",
+      "title": "3D K-Pg Bolide Impact & Shockwave Cutscene",
+      "subtitle": "Incandescent chondrite bolide, plasma wake cone & expanding shockwave",
+      "sourceFile": "src/scenes/earth/AsteroidImpactCutscene.tsx",
+      "dimensions": "1200×900 WebGL"
+    },
+    {
+      "id": "scene-robot-guide",
+      "category": "scenes",
+      "archivePath": "04-3d-scenes/scene-09-bauhaus-robot-docent.png",
+      "title": "3D Articulated Bauhaus Robot Docent Guide",
+      "subtitle": "Multi-part articulated museum automaton holding brass admission stamp",
+      "sourceFile": "src/scenes/login/RobotGuide.tsx",
+      "dimensions": "1200×900 WebGL"
+    },
+    {
+      "id": "scene-ticket-counter",
+      "category": "scenes",
+      "archivePath": "04-3d-scenes/scene-10-ticket-counter-kiosk.png",
+      "title": "3D Neo-Brutalist Architectural Ticket Counter",
+      "subtitle": "Monolithic concrete desk, limestone slab, brass beam & arch pillars",
+      "sourceFile": "src/scenes/login/TicketCounter.tsx",
+      "dimensions": "1200×900 WebGL"
+    },
+    {
+      "id": "scene-physics-ticket",
+      "category": "scenes",
+      "archivePath": "04-3d-scenes/scene-11-physics-admission-ticket.png",
+      "title": "3D Physics Admission Ticket & Perforated Stub",
+      "subtitle": "Spring-kinematic pass with crimson ADMITTED seal & Golden Ammonite medallion",
+      "sourceFile": "src/scenes/login/PhysicsTicket.tsx",
+      "dimensions": "1200×900 WebGL"
+    },
+    {
+      "id": "comp-01-navbar",
+      "category": "components",
+      "archivePath": "05-components/component-01-navbar.png",
+      "title": "Navbar (Top Bar Contract)",
+      "subtitle": "3-zone Neo-Brutalist header with wordmark, 5 nav links & Field Notebook CTA",
+      "sourceFile": "src/components/layout/Navbar.tsx",
+      "dimensions": "1200×750"
+    },
+    {
+      "id": "comp-02-footer",
+      "category": "components",
+      "archivePath": "05-components/component-02-footer.png",
+      "title": "Footer (Institutional Colophon)",
+      "subtitle": "Archival provenance links, geological epochs & museum operating telemetry",
+      "sourceFile": "src/components/layout/Footer.tsx",
+      "dimensions": "1200×750"
+    },
+    {
+      "id": "comp-03-pageshell",
+      "category": "components",
+      "archivePath": "05-components/component-03-pageshell.png",
+      "title": "PageShell Layout Container",
+      "subtitle": "Unified structural layout wrapper with Navbar, main stage & Footer",
+      "sourceFile": "src/components/layout/PageShell.tsx",
+      "dimensions": "1200×750"
+    },
+    {
+      "id": "comp-04-button",
+      "category": "components",
+      "archivePath": "05-components/component-04-button.png",
+      "title": "Button (5 Variants · Liquid Metal & Spring)",
+      "subtitle": "Primary, Secondary, Dark, Ghost, and Anisotropic Liquid-Metal shader buttons",
+      "sourceFile": "src/components/ui/Button.tsx",
+      "dimensions": "1200×750"
+    },
+    {
+      "id": "comp-05-badge",
+      "category": "components",
+      "archivePath": "05-components/component-05-badge.png",
+      "title": "Badge (Zero-Pill Typographic Metadata)",
+      "subtitle": "Unboxed Fossil Specimen & Cultural Artifact accession kickers",
+      "sourceFile": "src/components/ui/Badge.tsx",
+      "dimensions": "1200×750"
+    },
+    {
+      "id": "comp-06-card",
+      "category": "components",
+      "archivePath": "05-components/component-06-card.png",
+      "title": "Card (Specimen Catalog Card + Technical SVG)",
+      "subtitle": "Composite card with SpecimenTechnicalGraphic, SpotlightCard, TiltedCard & Magnet",
+      "sourceFile": "src/components/ui/Card.tsx",
+      "dimensions": "1200×750"
+    },
+    {
+      "id": "comp-07-sectionheader",
+      "category": "components",
+      "archivePath": "05-components/component-07-sectionheader.png",
+      "title": "SectionHeader (Editorial Typographic Header)",
+      "subtitle": "DecryptedText index kicker, SplitText display headline & AnimatedContent deck",
+      "sourceFile": "src/components/ui/SectionHeader.tsx",
+      "dimensions": "1200×750"
+    },
+    {
+      "id": "comp-08-deeptimeslider",
+      "category": "components",
+      "archivePath": "05-components/component-08-deeptimeslider.png",
+      "title": "DeepTimeSlider (4,600 Ma Magnetic Scrubber)",
+      "subtitle": "Non-linear geological scrubber with magnetic extinction snap & 5 era tabs",
+      "sourceFile": "src/components/ui/DeepTimeSlider.tsx",
+      "dimensions": "1200×750"
+    },
+    {
+      "id": "comp-09-eventmarker",
+      "category": "components",
+      "archivePath": "05-components/component-09-eventmarker.png",
+      "title": "EventMarker (Extinction Diamond Pin)",
+      "subtitle": "Rotated Bauhaus diamond marker for the Big Five mass extinction horizons",
+      "sourceFile": "src/components/ui/EventMarker.tsx",
+      "dimensions": "1200×750"
+    },
+    {
+      "id": "comp-10-shareableticketstub",
+      "category": "components",
+      "archivePath": "05-components/component-10-shareableticketstub.png",
+      "title": "ShareableTicketStub (960×420 Retina Canvas)",
+      "subtitle": "Personalized souvenir pass with crimson stamp, era progress & barcode stub",
+      "sourceFile": "src/components/ui/ShareableTicketStub.tsx",
+      "dimensions": "1200×750"
+    },
+    {
+      "id": "comp-11-docentaiprimitives",
+      "category": "components",
+      "archivePath": "05-components/component-11-docentaiprimitives.png",
+      "title": "ThinkingOrb, DocentAgentMessage & MasteryRing",
+      "subtitle": "Harmonic morphing orb (idle/thinking/narrating/alert), segmented tabs & rings",
+      "sourceFile": "src/components/ui/DocentAiPrimitives.tsx",
+      "dimensions": "1200×750"
+    },
+    {
+      "id": "comp-12-loader",
+      "category": "components",
+      "archivePath": "05-components/component-12-loader.png",
+      "title": "Loader (3D Archival Viewport Spinner)",
+      "subtitle": "Neo-Brutalist high-contrast WebGL initialization loader",
+      "sourceFile": "src/components/ui/Loader.tsx",
+      "dimensions": "1200×750"
+    },
+    {
+      "id": "comp-13-soundtoggleblock",
+      "category": "components",
+      "archivePath": "05-components/component-13-soundtoggleblock.png",
+      "title": "SoundToggleBlock (Web Audio Synthesizer HUD)",
+      "subtitle": "Floating acoustic synthesizer mute/unmute toggle control",
+      "sourceFile": "src/components/ui/SoundToggleBlock.tsx",
+      "dimensions": "1200×750"
+    },
+    {
+      "id": "comp-14-customcursor",
+      "category": "components",
+      "archivePath": "05-components/component-14-customcursor.png",
+      "title": "CustomCursor (Context-Aware Brutalist Reticle)",
+      "subtitle": "Spring-tracked cursor ring with dynamic action labels (OPEN, SCRUB, STAMP)",
+      "sourceFile": "src/components/ui/CustomCursor.tsx",
+      "dimensions": "1200×750"
+    },
+    {
+      "id": "comp-15-deeptimepreloader",
+      "category": "components",
+      "archivePath": "05-components/component-15-deeptimepreloader.png",
+      "title": "DeepTimePreloader (4,600 Ma Countdown Curtain)",
+      "subtitle": "Initial radiometric countdown splash screen with instant skip affordance",
+      "sourceFile": "src/components/ui/DeepTimePreloader.tsx",
+      "dimensions": "1200×750"
+    },
+    {
+      "id": "comp-16-pagewipetransition",
+      "category": "components",
+      "archivePath": "05-components/component-16-pagewipetransition.png",
+      "title": "PageWipeTransition (Stratigraphic Route Curtain)",
+      "subtitle": "Full-viewport Neo-Brutalist wipe transition between museum routes",
+      "sourceFile": "src/components/ui/PageWipeTransition.tsx",
+      "dimensions": "1200×750"
+    },
+    {
+      "id": "comp-17-lazycanvasandmodelloader",
+      "category": "components",
+      "archivePath": "05-components/component-17-lazycanvasandmodelloader.png",
+      "title": "LazyCanvas & ModelLoader (WebGL Lifecycle)",
+      "subtitle": "IntersectionObserver WebGL mount with RoomEnvironment & GLB/procedural fallback",
+      "sourceFile": "src/components/canvas/LazyCanvas.tsx + ModelLoader.tsx",
+      "dimensions": "1200×750"
+    },
+    {
+      "id": "comp-18-splittextanddecryptedtext",
+      "category": "components",
+      "archivePath": "05-components/component-18-splittextanddecryptedtext.png",
+      "title": "ReactBits: SplitText & DecryptedText",
+      "subtitle": "Staggered word/character spring reveal & cryptographic glyph unscrambler",
+      "sourceFile": "src/components/reactbits/SplitText.tsx + DecryptedText.tsx",
+      "dimensions": "1200×750"
+    },
+    {
+      "id": "comp-19-countupandscrollvelocity",
+      "category": "components",
+      "archivePath": "05-components/component-19-countupandscrollvelocity.png",
+      "title": "ReactBits: CountUp & ScrollVelocity Ticker",
+      "subtitle": "Tabular numeric spring counter & velocity-modulated geological era marquee",
+      "sourceFile": "src/components/reactbits/CountUp.tsx + ScrollVelocity.tsx",
+      "dimensions": "1200×750"
+    },
+    {
+      "id": "comp-20-spotlightandtiltedcard",
+      "category": "components",
+      "archivePath": "05-components/component-20-spotlightandtiltedcard.png",
+      "title": "ReactBits: SpotlightCard & TiltedCard",
+      "subtitle": "Radial pointer spotlight surface & 3D perspective tilt container",
+      "sourceFile": "src/components/reactbits/SpotlightCard.tsx + TiltedCard.tsx",
+      "dimensions": "1200×750"
+    },
+    {
+      "id": "comp-21-borderbeamandmagnet",
+      "category": "components",
+      "archivePath": "05-components/component-21-borderbeamandmagnet.png",
+      "title": "ReactBits: BorderBeam & Magnet",
+      "subtitle": "Dual-beam perimeter energy trace & magnetic cursor pull field",
+      "sourceFile": "src/components/reactbits/BorderBeam.tsx + Magnet.tsx",
+      "dimensions": "1200×750"
+    },
+    {
+      "id": "comp-22-architecturalgridandcanvasui",
+      "category": "components",
+      "archivePath": "05-components/component-22-architecturalgridandcanvasui.png",
+      "title": "ReactBits: ArchitecturalGridBg & CanvasUiOverlay",
+      "subtitle": "Interactive pointer-reactive architectural grid & atmospheric shader canvas",
+      "sourceFile": "src/components/reactbits/ArchitecturalGridBg.tsx + CanvasUiOverlay.tsx",
+      "dimensions": "1200×750"
+    },
+    {
+      "id": "comp-23-originkitprimitives",
+      "category": "components",
+      "archivePath": "05-components/component-23-originkitprimitives.png",
+      "title": "ReactBits: OriginFlipCard, SpringAccordion & MorphPanel",
+      "subtitle": "3D 180° flip card, spring physics accordion & calibrated blur-scale morph",
+      "sourceFile": "src/components/reactbits/OriginKitPrimitives.tsx",
+      "dimensions": "1200×750"
+    },
+    {
+      "id": "comp-24-clicksparkandanimatedcontent",
+      "category": "components",
+      "archivePath": "05-components/component-24-clicksparkandanimatedcontent.png",
+      "title": "ReactBits: ClickSpark & AnimatedContent",
+      "subtitle": "Radial click burst particles & viewport-triggered spring entrance wrapper",
+      "sourceFile": "src/components/reactbits/ClickSpark.tsx + AnimatedContent.tsx",
+      "dimensions": "1200×750"
+    },
+    {
+      "id": "modal-01-command-palette",
+      "category": "modals",
+      "archivePath": "06-modals/modal-01-command-palette-cmd-k.png",
+      "title": "CommandPaletteModal (⌘K Search & Jump Console)",
+      "subtitle": "Instant search across 5 geological eons, 5 mass extinctions & 20 specimens",
+      "sourceFile": "src/components/ui/CommandPaletteModal.tsx",
+      "dimensions": "1280×860"
+    },
+    {
+      "id": "modal-02-notebook-tours",
+      "category": "modals",
+      "archivePath": "06-modals/modal-02-field-notebook-guided-tours.png",
+      "title": "FieldNotebookModal · Guided Tours & Docent Autopilot",
+      "subtitle": "3 multi-era curatorial autopilot trajectories with ThinkingOrb header",
+      "sourceFile": "src/components/ui/FieldNotebookModal.tsx (tab=\"tours\")",
+      "dimensions": "1280×860"
+    },
+    {
+      "id": "modal-03-notebook-bookmarks",
+      "category": "modals",
+      "archivePath": "06-modals/modal-03-field-notebook-saved-specimens.png",
+      "title": "FieldNotebookModal · Saved Specimens Study List",
+      "subtitle": "Bookmarked fossil & cultural specimens with quick 3D Lab jump actions",
+      "sourceFile": "src/components/ui/FieldNotebookModal.tsx (tab=\"bookmarks\")",
+      "dimensions": "1280×860"
+    },
+    {
+      "id": "modal-04-notebook-quiz",
+      "category": "modals",
+      "archivePath": "06-modals/modal-04-field-notebook-mastery-quiz.png",
+      "title": "FieldNotebookModal · 8-Question Deep Time Mastery Quiz",
+      "subtitle": "Interactive curatorial evaluation with verified fact explanations & score ring",
+      "sourceFile": "src/components/ui/FieldNotebookModal.tsx (tab=\"quiz\")",
+      "dimensions": "1280×860"
+    },
+    {
+      "id": "modal-05-notebook-annotations",
+      "category": "modals",
+      "archivePath": "06-modals/modal-05-field-notebook-ui-annotations.png",
+      "title": "FieldNotebookModal · Agentation UI Pins & Markdown Brief",
+      "subtitle": "Captured DOM selectors, bounding boxes & one-click Markdown brief export",
+      "sourceFile": "src/components/ui/FieldNotebookModal.tsx (tab=\"annotations\")",
+      "dimensions": "1280×860"
+    },
+    {
+      "id": "modal-06-agentation-reticle-overlay",
+      "category": "modals",
+      "archivePath": "06-modals/modal-06-agentation-live-reticle-overlay.png",
+      "title": "AgentationOverlay · Live UI Reticle & Element Inspector",
+      "subtitle": "Full-viewport interactive DOM inspector with CSS selector & pin composer",
+      "sourceFile": "src/components/ui/AgentationOverlay.tsx",
+      "dimensions": "1280×860"
+    }
+  ]
+}

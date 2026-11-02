@@ -1,0 +1,119 @@
+{
+  "version": 1,
+  "savedAt": "2026-08-17T03:11:10.722Z",
+  "agents": [
+    {
+      "id": "god",
+      "name": "Michael",
+      "character": "michael",
+      "accent": "lemon",
+      "description": "god — runs the floor, triages requests, escalates only critical calls to you",
+      "project": "hive",
+      "tmuxTarget": "",
+      "cwd": "C:\\Users\\DELL\\Documents\\museverse",
+      "status": "idle",
+      "action": "running the floor",
+      "progress": 0,
+      "currentStation": "desk",
+      "ptyId": "pty-god",
+      "command": "agy --model \"Gemini 3.1 Pro (High)\" --dangerously-skip-permissions",
+      "provider": "antigravity",
+      "model": "Gemini 3.1 Pro (High)",
+      "isGod": true
+    },
+    {
+      "id": "jim-mswmsc37",
+      "name": "Jim",
+      "character": "jim",
+      "accent": "sky",
+      "description": "on standby",
+      "project": "C:\\Users\\DELL\\Documents\\museverse",
+      "tmuxTarget": "",
+      "cwd": "C:\\Users\\DELL\\Documents\\museverse",
+      "status": "idle",
+      "action": "starting up",
+      "progress": 0,
+      "currentStation": "desk",
+      "ptyId": "pty-jim-mswmsc37",
+      "command": "agy --dangerously-skip-permissions",
+      "provider": "antigravity",
+      "archived": false,
+      "note": "hi what are doing"
+    },
+    {
+      "id": "michael-mswnjz3d",
+      "name": "Michael",
+      "character": "michael",
+      "accent": "sky",
+      "description": "on standby",
+      "project": "C:\\Users\\DELL\\Documents\\museverse",
+      "tmuxTarget": "",
+      "cwd": "C:\\Users\\DELL\\Documents\\museverse",
+      "status": "idle",
+      "action": "awaiting",
+      "progress": 0,
+      "currentStation": "desk",
+      "ptyId": "pty-michael-mswnjz3d",
+      "command": "agy --model \"Gemini 3.5 Flash (High)\" --dangerously-skip-permissions",
+      "provider": "antigravity",
+      "model": "Gemini 3.5 Flash (High)"
+    },
+    {
+      "id": "kelly-mswnp0u1",
+      "name": "Kelly",
+      "character": "kelly",
+      "accent": "sky",
+      "description": "on standby",
+      "project": "C:\\Users\\DELL\\Documents\\museverse",
+      "tmuxTarget": "",
+      "cwd": "C:\\Users\\DELL\\Documents\\museverse",
+      "status": "idle",
+      "action": "awaiting",
+      "progress": 0,
+      "currentStation": "desk",
+      "ptyId": "pty-kelly-mswnp0u1",
+      "command": "claude --model claude-fable-5 --permission-mode bypassPermissions",
+      "provider": "claude",
+      "model": "claude-fable-5"
+    }
+  ],
+  "archived": [
+    {
+      "id": "jim-mswmnupi",
+      "name": "Jim",
+      "character": "jim",
+      "accent": "sky",
+      "description": "on standby",
+      "project": "C:\\Users\\DELL\\Documents\\museverse",
+      "tmuxTarget": "",
+      "cwd": "C:\\Users\\DELL\\Documents\\museverse",
+      "status": "idle",
+      "action": "archived",
+      "progress": 0,
+      "command": "claude --model claude-fable-5 --permission-mode bypassPermissions",
+      "provider": "claude",
+      "model": "claude-fable-5",
+      "archived": true
+    }
+  ],
+  "restorable": [],
+  "queues": {
+    "jim-mswmsc37": [
+      {
+        "id": "q-1786935691623-2",
+        "text": "hi jim",
+        "ts": 1786935691623,
+        "manual": true
+      }
+    ],
+    "god": [
+      {
+        "id": "q-1786935723625-3",
+        "text": "did you intall antigravity",
+        "ts": 1786935723625,
+        "manual": true
+      }
+    ]
+  },
+  "selectedId": "kelly-mswnp0u1"
+}
