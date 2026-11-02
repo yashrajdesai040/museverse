@@ -3,6 +3,7 @@
 > **MUSEO (Museverse)** is an immersive, browser-based digital museum combining **4.5 billion years of Earth's evolution** with interactive 3D WebGL storytelling and a museum-quality digital specimen archive. Built with **Next.js 16 (App Router)**, **React Three Fiber (Three.js)**, **Zustand**, and **Tailwind CSS**.
 
 ---
+link : https://museverse-h666.vercel.app
 
 ## 📚 Complete Project Documentation
 
